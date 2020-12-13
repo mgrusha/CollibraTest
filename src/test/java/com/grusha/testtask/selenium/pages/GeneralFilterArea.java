@@ -13,7 +13,7 @@ import java.time.Period;
 import static java.util.concurrent.TimeUnit.SECONDS;
 
 public class GeneralFilterArea extends BaseNavigationPage {
-    private static final String SUB_CATEGORIES = "//div[@id='opbox-category-tree']//a[contains(text(), '%s')]";
+    private static final String SUB_CATEGORIES = "//div[@data-role='Categories']//a[contains(text(), '%s')]";
     private static final By RESULTS_AREA = By.id("opbox-listing");
 
     public GeneralFilterArea(WebDriver driver) {

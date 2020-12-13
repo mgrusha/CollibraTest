@@ -15,7 +15,7 @@ public class BaseNavigationPage {
     }
 
     public StartPage closeAdvertisementWindows() {
-        List<WebElement> closeAdvBtn = driver.findElements(By.xpath("//button[@data-analytics-interaction-value='closeIcon']"));
+        List<WebElement> closeAdvBtn = driver.findElements(By.xpath("//button[@data-role='close-and-accept-consent']"));
         if (closeAdvBtn.size() > 0) {
             closeAdvBtn.get(0).click();
         }

@@ -5,7 +5,7 @@ import org.openqa.selenium.WebDriver;
 
 public class SubCategoriesChooserPage extends BaseNavigationPage {
 
-    private static final By KOMPUTERY = By.xpath("//a[contains(text(), 'Komputery |')]");
+    private static final By KOMPUTERY = By.xpath("//div[@data-box-name='category - Elektronika']//li/a[contains(text(), 'Komputery')]");
 
 
     public SubCategoriesChooserPage(WebDriver driver) {

@@ -19,13 +19,13 @@ public class RestTest {
 
     final String URL = "https://jsonplaceholder.typicode.com/comments";
 
-    @Test
+    //@Test
     public void checkCodeAndEmail() {
         RestAssured.get(URL).then().statusCode(200).
                 and().assertThat().body("email", hasItems("Jayne_Kuhic@sydney.com"));
     }
 
-    @Test
+    //@Test
     public void deserializeAndFilter() {
         String expectedText = "non";
         int expectedPostId = 1;
